@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro - Happy Flower Store</title>
+    <style>
+        body{
+            background-color: #f5d9f4;
+            margin: 1;
+            height: 100vh;
+            display: grid;
+            grid-template-columns: repeat(20, 5%);
+            grid-template-rows: repeat(20, 5%);
+        }
+        .header{
+            font-family: fantasy;
+            font-size: 80px;
+            text-align: center;
+            grid-column-start: 7;
+            grid-column-end: 15;
+            grid-row-start: 2;
+            grid-row-end: 6;
+        }
+        .section{
+            align-self: center;
+            grid-row-start: 2;
+            grid-row-end: 6;
+            grid-column-start: 14;
+            grid-column-end: 16;
+        }
+        .section1{
+            background-color:rgb(193, 193, 255);
+            font-size: 18px;
+            border: 2px solid maroon;
+            grid-column-start: 6;
+            grid-column-end: 16;
+            grid-row-start: 8;
+            grid-row-end: 22;
+        }
+        .menu{
+            align-self: center;
+            font-size: 18px;
+            grid-column-start: 7;
+            grid-column-end: 10;
+            grid-row-start: 8;
+            grid-row-end: 10;
+        }
+        .menu1{
+            align-self: center;
+            font-size: 18px;
+            grid-column-start: 11;
+            grid-column-end: 16;
+            grid-row-start: 8;
+            grid-row-end: 10;
+        }
+        .menu2{
+            align-self: center;
+            font-size: 18px;
+            grid-column-start: 6;
+            grid-column-end: 11;
+            grid-row-start: 10;
+            grid-row-end: 12;
+        }
+        .menu3{
+            align-self: center;
+            font-size: 18px;
+            grid-column-start: 11;
+            grid-column-end: 16;
+            grid-row-start: 10;
+            grid-row-end: 12;
+        }
+        .menu4{
+            align-self: center;
+            font-size: 18px;
+            grid-column-start: 7;
+            grid-column-end: 10;
+            grid-row-start: 12;
+            grid-row-end: 14;
+        }
+        .menu5{
+            align-self: center;
+            font-size: 18px;
+            grid-column-start: 11;
+            grid-column-end: 16;
+            grid-row-start: 12;
+            grid-row-end: 14;
+        }
+        .menu6{
+            align-self: center;
+            justify-self: center;
+            font-size: 18px;
+            grid-column-start: 6;
+            grid-column-end: 16;
+            grid-row-start: 14;
+            grid-row-end: 16;
+        }
+        .menu7{
+            justify-self: center;
+            align-self: center;
+            font-size: 18px;
+            grid-column-start: 6;
+            grid-column-end: 16;
+            grid-row-start: 17;
+            grid-row-end: 18;
+        }
+        .menu8{
+            justify-self: center;
+            align-self: center;
+            font-size: 18px;
+            grid-column-start: 6;
+            grid-column-end: 16;
+            grid-row-start: 18;
+            grid-row-end: 21;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <font color="purple">
+            Happy Flower Cadastro
+        </font>
+    </header>
+
+    <section class="section">
+        <img src="C:\Users\lucas\Downloads\logo.png" alt="logo" width=160 height=160>
+    </section>
+
+    <section class="section1">
+
+    </section>
+
+    <menu class="menu">
+        <form action="pagina2.php" method="post">
+
+            <label for="inputNome">
+                Nome:
+            </label>
+            <input id="inputNome" type="text" name="nome">
+    </menu>
+    <menu class="menu1">
+            <label for="inputSnome">
+                Sobrenome:
+            </label>
+            <input id="inputSnome" type="text" name="Snome">
+    </menu>
+    <menu class="menu2">
+            <label for="inputData">
+                Data de Nascimento
+            </label>
+            <input id="inputData" type="date" name="data">
+    </menu>
+    <menu class="menu3">
+            <label for="inputEmail">
+                E-mail:
+            </label>
+            <input id="inputEmail" type="text" name="email">
+    </menu>
+    <menu class="menu4">
+            <label for="inputSenha">
+                Senha:
+            </label>
+            <input id="inputSenha" type="text" name="senha">
+    </menu>
+    <menu class="menu5">
+            <label for="inputCsenha">
+                Confirmar Senha:
+            </label>
+            <input id="inputCsenha" type="text" name="Csenha">
+    </menu>
+    <menu class="menu6">
+            <label for="selectTipo">Tipo</label>
+            <select id="selectTipo" name="tipo">
+                <option value="Cliente">Cliente</option>
+                <option value="Fornecedor">Fornecedor</option>
+            </select>
+    </menu>
+    <menu class="menu7">
+            <label for="SelectOptions"></label>
+            <input type="checkbox" id="declaro" name="declaro" value="declaro">
+            <label for="declaro">Declaro que li e concordo com os Termos de Uso</label>
+            <input type="checkbox" id="receber" name="receber" value="receber">
+            <label for="receber">Desejo receber atualizações por e-mail</label>
+    </menu>
+    <menu class="menu8">
+            <input type="submit" value="Cadastrar">
+    </menu>
+        </form>
+</body>
+
+</html>
